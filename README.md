@@ -1,0 +1,2 @@
+# myautomuteus
+AutoMuteUsのセルフホスト用ファイル置き場です
