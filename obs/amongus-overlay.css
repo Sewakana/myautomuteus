@@ -1,0 +1,185 @@
+/* 値を利用しやすくしてる定義エリア */
+:root {
+	--aured:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/red.png?raw=true');
+	--aublue:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/blue.png?raw=true');
+	--augreen:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/green.png?raw=true');
+	--aupink:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/pink.png?raw=true');
+	--auorange:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/orange.png?raw=true');
+	--auyellow:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/yellow.png?raw=true');
+	--aublack:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/black.png?raw=true');
+	--auwhite:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/white.png?raw=true');
+	--aupurple:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/purple.png?raw=true');
+	--aubrown:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/brown.png?raw=true');
+	--aucyan:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/cyan.png?raw=true');
+	--aulime:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/lime.png?raw=true');
+	--aumaroon:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/maroon.png?raw=true');
+	--aurose:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/rose.png?raw=true');
+	--aubanana:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/banana.png?raw=true');
+	--augray:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/gray.png?raw=true');
+	--autan:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/tan.png?raw=true');
+	--aucoral:url('https://github.com/Sewakana/myautomuteus/blob/master/icons/coral.png?raw=true');
+
+	--discord-avatarsize:100px;
+	--crewmate-iconsize:100px;
+}
+
+@keyframes pyonpyon {
+	0% { transform: translate(0, 0); }
+	50% { transform: translate(0, -0.5em); }
+	100% { transform: translate(0, 0); }
+}
+
+body {
+	margin: 0px;
+	overflow: hidden;
+	padding-left: var(--discord-avatarsize);
+	background:transparent;
+	transform: scale(0.9);
+}
+
+.voice-container {
+	margin:0;
+}
+
+.voice-container .voice-states {
+	padding:0;
+	margin:0;
+	transform:translateX(45px);
+}
+
+.voice-container .voice-states .voice-state {
+	height:var(--discord-avatarsize);
+	margin-bottom: 5px;
+	list-style-type: none;
+	min-width:var(--discord-avatarsize);
+	max-width:var(--discord-avatarsize);
+}
+
+.voice-container .voice-states .voice-state .avatar {
+	height: var(--discord-avatarsize);
+	width: var(--discord-avatarsize);
+	border:0 solid transparent;
+	border-radius: 0;
+	float: none;
+	margin-right: 0px;
+	margin:0;
+}
+
+.avatar {
+	filter: brightness(60%);
+}
+
+
+.voice-container .voice-states .voice-state .avatar.speaking {
+	border-color:transparent !important;
+}
+
+.speaking {
+	filter: brightness(100%) !important;
+	animation: pyonpyon 0.5s infinite ease;
+	border:0;
+	box-shadow: 0 0 10px yellow;
+}
+
+.voice-container .voice-states .voice-state .user {
+	padding-top:0;
+
+	position:relative;
+	top:-30px;
+	display:inline-block;
+	text-align:center;
+	z-index:2;
+	min-width: var(--discord-avatarsize);
+	max-width: var(--discord-avatarsize);
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:24pt !important;
+	background-color:rgba(33, 31, 30, 0.6) !important;
+}
+
+.voice-container .voice-states .voice-state .user .name {
+	font-size:12pt !important;
+	border:0;
+	margin:0;
+	background-color:transparent !important;
+}
+
+.voice-state .user:before {
+	margin:0;
+	margin-right:0;
+	color: #ffffff;
+}
+
+/* クルーメイトアイコン設定部 */
+.voice-state:after {
+	display: inline-block;
+     width: var(--crewmate-iconsize);
+     height: var(--crewmate-iconsize);
+	margin-top: -25px;
+	position:relative;
+	bottom:var(--crewmate-iconsize);
+	z-index:5;
+	background-size: contain;
+	content: '';	/*何も入れない*/
+	left: calc(-1 * var(--crewmate-iconsize));
+}
+
+/* クルーメイトアイコン（人数分コピペする） */
+/* H */
+.voice-state[data-reactid*="492153576085389312"]:after {
+    background-image:var(--aubanana);
+}
+/* t */
+.voice-state[data-reactid*="474198775393550336"]:after {
+    background-image:var(--aublue);
+}
+/* き */
+.voice-state[data-reactid*="875685671266811946"]:after {
+    background-image:var(--auorange);
+}
+/* せ */
+.voice-state[data-reactid*="420569417135685643"]:after {
+    background-image:var(--aupink);
+}
+/* べ */
+.voice-state[data-reactid*="495914774194814976"]:after {
+    background-image:var(--aulime);
+}
+/* み */
+.voice-state[data-reactid*="850679088132653106"]:after {
+    background-image:var(--auwhite);
+}
+/* キ */
+.voice-state[data-reactid*="708676043250335765"]:after {
+    background-image:var(--aucyan);
+}
+/* あ */
+.voice-state[data-reactid*="477692517710692364"]:after {
+    background-image:var(--aured);
+}
+/* く */
+.voice-state[data-reactid*="807255777009729598"]:after {
+    background-image:var(--aupurple);
+}
+/* せ */
+.voice-state[data-reactid*="572188285011492884"]:after {
+    background-image:var(--aubrown);
+}
+/* d */
+.voice-state[data-reactid*="482920729688408067"]:after {
+    background-image:var(--aurose);
+}
+/* 大 */
+.voice-state[data-reactid*="495931660702056458"]:after {
+    background-image:var(--aublack);
+}
+/* と */
+.voice-state[data-reactid*="953911139857727488"]:after {
+    background-image:var(--augreen);
+}
+.voice-state[data-reactid*="905445016363757599"]:after {
+    background-image:var(--autan);
+}
+.voice-state[data-reactid*="929346534074626129"]:after {
+    background-image:var(--aucoral);
+}
