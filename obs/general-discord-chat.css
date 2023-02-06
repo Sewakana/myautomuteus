@@ -1,0 +1,41 @@
+body {
+  background-color: rgba(0, 0, 0, 0); margin: 0px auto;
+  overflow: hidden;
+}
+.channel-name {
+  display:none;
+}
+.messages {
+  width: 300px !important;
+  height: 400px !important;
+  overflow-wrap: anywhere !important;
+}
+li span span{
+  color: black !important;
+  font-weight: 800 !important;
+  margin: 5px,5px,5px,5px !important;
+}
+.message {
+   display: flex !important;
+}
+.timestamp {
+  display:none;
+}
+.username {
+  width: 60px !important;
+  font-weight:500 !important;
+  font-size: 10px!important;
+  padding: 0 !important;
+  margin: 0 !important;
+  white-space: pre !important;
+  overflow: clip !important;
+  text-overflow: ellipsis !important;
+}
+.username:after {
+  content: '\A';
+  white-space: pre;
+}
+.message-text{
+  width: 240px !important; 
+  padding-left: 10px!important;
+}
